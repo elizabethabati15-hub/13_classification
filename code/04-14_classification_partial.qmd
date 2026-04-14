@@ -488,7 +488,7 @@ Now, let's select best based on roc-auc (higher is better):
 ```{r}
 # Based on highest roc_auc
 best_roc <- rf_grid_result %>%
-  select_best(metric = "classification")
+  select_best(metric = "accuracy")
 
 best_roc
 
